@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhilosopherChatbots</title>
+    <script>
+        // Redirect to capitalized URL
+        if (window.location.hostname === "www.philosopherchatbots.com") {
+            window.location.href = window.location.href.replace(
+                "www.philosopherchatbots.com",
+                "www.PhilosopherChatbots.com"
+            );
+        }
+    </script>
     <style>
         /* Importing a nice font */
         @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
@@ -15,6 +24,7 @@
             color: #4a4a4a; /* Neutral dark text for contrast */
             margin: 0;
             padding: 20px;
+            text-align: left; /* Align all text to the left */
         }
 
         /* Title Section */
@@ -26,7 +36,6 @@
         }
 
         .intro {
-            text-align: center;
             font-size: 1.2em;
             line-height: 1.8;
             margin-bottom: 40px;
@@ -35,7 +44,7 @@
         /* Main Content */
         .content {
             max-width: 600px;
-            margin-left: 40px; /* Shift the content slightly to the right */
+            margin: 0; /* Align content flush to the left */
         }
 
         p {
@@ -76,6 +85,13 @@
             font-style: italic;
             color: #4a4a4a;
         }
+
+        /* Attribution Text */
+        .attribution {
+            font-size: 0.7em; /* Even smaller than the footer text */
+            color: #4a4a4a;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -109,6 +125,11 @@
                 I think the longer answers are more fun, but here's a prompt you can type into the chat to make the bot speak more concisely: <i>Answer me in a maximum of two sentence answers. One sentence is preferable when reasonable.</i>
             </p>
         </footer>
+
+        <!-- Attribution Text -->
+        <div class="attribution">
+            Made by Edward G. R. Ruse for fun.
+        </div>
     </div>
 </body>
 </html>
